@@ -4,7 +4,7 @@ const app = express()
 
 //Routes
 app.get("/", function(req, res){
-    res.send("Hi there!")
+    res.send("Hi there you sonna of a bitch!")
 })
 
 app.get("/name_with_params/:name", function(req, res){
