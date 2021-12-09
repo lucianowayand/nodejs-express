@@ -5,11 +5,11 @@ const dir = __dirname
 
 //Routes
 app.get("/", function(req, res){
-    res.send("Home")
+    res.sendFile(dir+"/views/main/index.html")
 })
 
 app.get("/about_us", function(req, res){
-    res.send("About us")
+    res.sendFile(dir+"/views/about/index.html")
 })
 
 
