@@ -7,8 +7,8 @@ app.get("/", function(req, res){
     res.send("Hi there!")
 })
 
-app.get("/about_us", function(req, res){
-    res.send("Hi About!")
+app.get("/name_with_params/:name", function(req, res){
+    res.send("Hi "+req.params["name"]+"!")
 })
 
 
