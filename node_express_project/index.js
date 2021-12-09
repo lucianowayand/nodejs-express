@@ -1,16 +1,16 @@
 const express = require("express")
 
 const app = express()
+const dir = __dirname
 
 //Routes
 app.get("/", function(req, res){
-    res.send("Hi there you sonna of a bitch!")
+    res.sendFile(dir+"/views/main/index.html")
 })
 
-app.get("/name_with_params/:name", function(req, res){
-    res.send("Hi "+req.params["name"]+"!")
+app.get("/about_us", function(req, res){
+    res.sendFile(dir+"/views/about/index.html")
 })
-
 
 
 //Server callback
