@@ -4,7 +4,6 @@ const app = express()
 const handlebars = require("express-handlebars")
 const bodyParser = require("body-parser")
 //const mongoose = require("mongoose")
-const routes = require("./routes/routes")
 
 //Configs
 app.use(bodyParser.urlencoded())
@@ -17,6 +16,7 @@ app.set('views', './views');
 const dir = __dirname
 
 //Routes
+const routes = require("./routes/routes")
 app.use("/", routes)
 
 
