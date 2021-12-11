@@ -1,13 +1,12 @@
 const express = require("express")
 const router = express.Router()
-const dir = __dirname.replace("/routes","")
 
 router.get("/", function(req, res){
-    res.sendFile(dir+"/views/main/index.html")
+    res.render("main/index")
 })
 
 router.get("/about_us", function(req, res){
-    res.sendFile(dir+"/views/about/index.html")
+    res.render("about/index")
 })
 
 module.exports = router

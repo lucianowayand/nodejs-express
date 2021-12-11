@@ -4,6 +4,7 @@ const app = express()
 const handlebars = require("express-handlebars")
 const bodyParser = require("body-parser")
 //const mongoose = require("mongoose")
+const path = require("path")
 
 //Configs
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -12,6 +13,8 @@ app.use(bodyParser.json())
 app.engine('handlebars', handlebars.engine())
 app.set('view engine', 'handlebars');
 app.set('views', './views');
+
+app.use(express.static(path.join(__dirname,"public")))
 
 const dir = __dirname
 
