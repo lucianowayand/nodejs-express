@@ -6,7 +6,7 @@ const bodyParser = require("body-parser")
 //const mongoose = require("mongoose")
 
 //Configs
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.engine('handlebars', handlebars.engine())
