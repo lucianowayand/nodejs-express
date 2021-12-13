@@ -5,7 +5,7 @@ router.get("/", function(req, res){
     res.render("main/index")
 })
 
-router.get("/about_us", function(req, res){
+router.get("/about", function(req, res){
     res.render("about/index")
 })
 
