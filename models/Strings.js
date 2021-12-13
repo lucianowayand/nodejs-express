@@ -11,5 +11,7 @@ const Strings = new Schema({
         required: true,
         default: Date.now()
     }
-    
+
 })
+
+mongoose.model("strings", Strings)

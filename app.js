@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 app.set('views', './views');
 
 mongoose.Promise = global.Promise
-mongoose.connect("mongodb://localhost/node_project").then(() => {
+mongoose.connect("mongodb://localhost/strings").then(() => {
     console.log("Connected to MongoDB!")
 }).catch((err) => {
     console.log("Couldn't connect: "+err)
