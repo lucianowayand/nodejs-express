@@ -9,4 +9,9 @@ router.get("/about", function(req, res){
     res.render("about/index")
 })
 
+router.get("/forms", function(req, res){
+    res.render("forms/index")
+})
+
+
 module.exports = router
